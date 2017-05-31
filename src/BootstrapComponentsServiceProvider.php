@@ -11,7 +11,7 @@ class BootstrapComponentsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bootstrap-components');
+        $this->loadViewsFrom(__DIR__.'/../resources/views/bs' . config('bootstrap-components.version'), 'bootstrap-components');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([

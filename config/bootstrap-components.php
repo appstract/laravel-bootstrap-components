@@ -1,3 +1,8 @@
 <?php
 
-return [];
+return [
+
+    // Bootstrap version
+
+    'version' => 4
+];

@@ -5,7 +5,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/appstract/laravel-bootstrap-components/master.svg?style=flat-square)](https://travis-ci.org/appstract/laravel-bootstrap-components)
 
-Easily use bootstrap components as Larabvel components
+Easily use bootstrap components as Laravel components
 
 ## Installation
 
@@ -31,8 +31,8 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 ## Usage
 
-```php
-@component('bootstrap::modal')
+```blade
+@component('bootstrap-components::modal')
     This is the content of the modal
 @endcomponent
 ```

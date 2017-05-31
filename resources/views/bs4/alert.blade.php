@@ -1,4 +1,5 @@
 <div class="alert alert-{{ $severity }}
+    {{ $class or '' }}
     @if(isset($dismissible) && $dismissible) alert-dismissible @endif
     @if(isset($animate) && $animate) fade show @endif"
     role="alert">

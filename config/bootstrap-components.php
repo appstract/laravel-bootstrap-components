@@ -4,5 +4,5 @@ return [
 
     // Bootstrap version
 
-    'version' => 4
+    'version' => 4,
 ];

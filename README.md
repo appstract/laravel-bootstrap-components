@@ -37,6 +37,8 @@ Then add the ServiceProvider to your `config/app.php` file:
 @endcomponent
 ```
 
+Check the [wiki](https://github.com/appstract/laravel-bootstrap-components/wiki) for more documentation.
+
 ## Testing
 
 ```bash

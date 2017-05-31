@@ -1,0 +1,46 @@
+{
+    "name": "appstract/laravel-bootstrap-components",
+    "description": "Bootstrap components for Laravel",
+    "keywords": [
+        "appstract",
+        "laravel-bootstrap-components"
+    ],
+    "homepage": "https://github.com/appstract/laravel-bootstrap-components",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gijs Jorissen",
+            "email": "hello@appstract.team",
+            "homepage": "https://appstract.team",
+            "role": "Developer"
+        },
+        {
+            "name": "Olav van Schie",
+            "email": "hello@appstract.team",
+            "homepage": "https://appstract.team",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Appstract\\BootstrapComponents\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Appstract\\BootstrapComponents\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+  }
+}

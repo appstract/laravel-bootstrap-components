@@ -4,8 +4,8 @@
             @foreach($pagination as $label => $link)
                 <li class="page-item"><a class="page-link" href="{{ $link }}">{!! $label !!}</a></li>
             @endforeach
-        @else
-            {{ $slot }}
         @endisset
+
+        {{ $slot }}
     </ul>
 </nav>

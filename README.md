@@ -5,7 +5,8 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/appstract/laravel-bootstrap-components/master.svg?style=flat-square)](https://travis-ci.org/appstract/laravel-bootstrap-components)
 
-Easily use bootstrap components as Laravel components
+Easily use bootstrap components as Laravel components.
+Requires Laravel 5.4+
 
 ## Installation
 

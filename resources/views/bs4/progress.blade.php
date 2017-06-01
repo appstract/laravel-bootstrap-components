@@ -1,4 +1,4 @@
-<div class="progress {{ $class or '' }}">
+<div class="progress">
     <div
         class="progress-bar {{ $class or '' }}"
         role="progressbar"

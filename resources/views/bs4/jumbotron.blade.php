@@ -1,7 +1,12 @@
-<div class="jumbotron {{ $class or '' }} @if(isset($fullwidth) && $fullwidth) jumbotron-fluid @endif">
-    @if(isset($fullwidth) && $fullwidth)
+<div
+    class="jumbotron
+        {{ $class or '' }}
+        @istrue($fullwidth, 'jumbotron-fluid')
+    "
+>
+    @istrue($fullwidth)
         <div class="container">
-    @endif
+    @endistrue
 
     @isset($heading)
         <h1 class="display-3">{{ $heading }}</h1>
@@ -9,7 +14,7 @@
 
         {{ $slot }}
 
-    @if(isset($fullwidth) && $fullwidth)
+    @istrue($fullwidth)
         </div>
-    @endif
+    @endistrue
 </div>

@@ -1,14 +1,15 @@
 <div class="alert alert-{{ $severity }}
     {{ $class or '' }}
-    @if(isset($dismissible) && $dismissible) alert-dismissible @endif
-    @if(isset($animate) && $animate) fade show @endif"
-    role="alert">
+    @istrue($dismissible, 'alert-dismissible')
+    @istrue($animate, 'fade show')
+    role="alert"
+>
 
-    @if(isset($dismissible) && $dismissible)
+    @istrue($dismissible)
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-    @endif
+    @endistrue
 
     {{ $slot }}
 </div>

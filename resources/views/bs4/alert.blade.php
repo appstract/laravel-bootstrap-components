@@ -1,7 +1,9 @@
-<div class="alert alert-{{ $severity }}
-    {{ $class or '' }}
-    @istrue($dismissible, 'alert-dismissible')
-    @istrue($animate, 'fade show')
+<div
+    class="alert alert-{{ $severity }}
+        {{ $class or '' }}
+        @istrue($dismissible, 'alert-dismissible')
+        @istrue($animate, 'fade show')
+    "
     role="alert"
 >
 

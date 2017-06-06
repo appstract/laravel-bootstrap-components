@@ -1,10 +1,6 @@
 <div
     class="card {{ $class or '' }}"
 >
-    @isset($image)
-        {{ $image }}
-    @endistrue
-
     @isset($heading)
         <div class="card-header">
             {{ $heading }}

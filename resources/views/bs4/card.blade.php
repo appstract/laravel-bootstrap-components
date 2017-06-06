@@ -5,7 +5,7 @@
         <div class="card-header">
             {{ $heading }}
         </div>
-    @endistrue
+    @endisset
 
     {{ $slot }}
 
@@ -13,5 +13,5 @@
         <div class="card-footer">
             {{ $footer }}
         </div>
-    @endistrue
+    @endisset
 </div>

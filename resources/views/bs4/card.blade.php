@@ -1,9 +1,9 @@
 <div
     class="card {{ $class or '' }}"
 >
-    @isset($heading)
+    @isset($header)
         <div class="card-header">
-            {{ $heading }}
+            {{ $header }}
         </div>
     @endisset
 

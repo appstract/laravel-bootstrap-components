@@ -1,21 +1,17 @@
 <div
     class="card {{ $class or '' }}"
 >
-    @istrue($image)
-        <img
-            class="card-img-top {{ $image['class'] or '' }}"
-            src="{{ $image['src'] }}"
-            alt="{{ $image['alt'] or '' }}"
-        >
-    @endistrue
-
-    @istrue($heading)
+    @isset($heading)
         <div class="card-header">
             {{ $heading }}
         </div>
-    @endistrue
+    @endisset
 
-    <div class="card-block">
-        {{ $slot }}
-    </div>
+    {{ $slot }}
+
+    @isset($footer)
+        <div class="card-footer">
+            {{ $footer }}
+        </div>
+    @endisset
 </div>

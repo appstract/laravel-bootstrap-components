@@ -1,11 +1,27 @@
 <nav aria-label="Page navigation">
-    <ul class="pagination {{ $class or '' }}">
-        @isset($pagination)
-            @foreach($pagination as $label => $link)
-                <li class="page-item"><a class="page-link" href="{{ $link }}">{!! $label !!}</a></li>
-            @endforeach
-        @endisset
+    @php
+        $paginator = $paginator->toArray();
+    @endphp
 
-        {{ $slot }}
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="{{ $paginator['prev_page_url'] }}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+
+        @foreach($elements[0] as $page => $link)
+            <li class="page-item @if($paginator['current_page'] == $page) active @endif">
+                <a class="page-link" href="{{ $link }}">{!! $page !!}</a>
+            </li>
+        @endforeach
+
+        <li class="page-item">
+            <a class="page-link" href="{{ $paginator['next_page_url'] }}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
     </ul>
 </nav>

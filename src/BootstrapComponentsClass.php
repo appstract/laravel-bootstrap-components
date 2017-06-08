@@ -3,6 +3,7 @@
 namespace Appstract\BootstrapComponents;
 
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class BootstrapComponentsClass
 {
@@ -22,7 +23,9 @@ class BootstrapComponentsClass
      */
     public function pagination($items, $page = 1, $perPage = 25, $path = '')
     {
-        $paginator = (new LengthAwarePaginator($items, count($items), $perPage, $page))
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+
+        $paginator = (new LengthAwarePaginator($items, $items->count(), (int) $perPage, (int) $page))
             ->withPath($path);
 
         return $paginator->render('bootstrap-components::render.pagination');

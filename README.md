@@ -8,6 +8,9 @@
 Easily use bootstrap components as Laravel components.
 Requires Laravel 5.4+
 
+At this moment Bootstrap 3 and 4 are supported, however the available components can vary.
+The package is in constant development and new components will be added regulary. You can help with adding components by creating a pull request.
+
 ## Installation
 
 You can install the package via composer:
@@ -40,15 +43,17 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 Check the [wiki](https://github.com/appstract/laravel-bootstrap-components/wiki) for more documentation.
 
-## Testing
-
-```bash
-$ composer test
-```
 
 ## Contributing
 
-Contributions are welcome, [thanks to y'all](https://github.com/appstract/laravel-bootstrap-components/graphs/contributors) :)
+Contributions are very welcome! If you want to add a component, please keep the following in mind when creating a pull request:
+
+- Have a look at the existing components for examples
+- Customization of the component (like custom classes and options for the component)
+- We higly appreciate if you can add support for multiple Bootstrap versions, but it is not required
+- Provide some docs in the Wiki
+
+[Thanks to all the contributors](https://github.com/appstract/laravel-bootstrap-components/graphs/contributors)
 
 ## About Appstract
 

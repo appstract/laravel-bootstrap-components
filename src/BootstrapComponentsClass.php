@@ -2,12 +2,11 @@
 
 namespace Appstract\BootstrapComponents;
 
-use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class BootstrapComponentsClass
 {
-
     public function __construct()
     {
         // constructor body

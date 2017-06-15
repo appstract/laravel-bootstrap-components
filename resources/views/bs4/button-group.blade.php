@@ -1,3 +1,6 @@
-<div class="btn-group {{ $class or '' }}" role="group">
+<div
+    class="btn-group {{ $class or '' }}"
+    role="group"
+>
     {{ $slot }}
 </div>

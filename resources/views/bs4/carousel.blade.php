@@ -1,4 +1,8 @@
-<div id="{{ $id or 'carousel' }}" class="carousel slide {{ $class or '' }}" data-ride="carousel">
+<div
+    id="{{ $id or 'carousel' }}"
+    class="carousel slide {{ $class or '' }}"
+    data-ride="carousel"
+>
     @istrue($indicators)
         <ol class="carousel-indicators">
             @isset($items)
@@ -6,7 +10,7 @@
                     <li data-target="#{{ $id or 'carousel' }}" data-slide-to="{{ $loop->index }}"></li>
                 @endforeach
             @else
-                {{ $indicators }}
+                {!! $indicators !!}
             @endisset
         </ol>
     @endistrue

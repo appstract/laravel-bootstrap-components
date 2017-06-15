@@ -3,7 +3,7 @@
 >
     @isset($header)
         <div class="card-header">
-            {{ $header }}
+            {!! $header !!}
         </div>
     @endisset
 
@@ -11,7 +11,7 @@
 
     @isset($footer)
         <div class="card-footer">
-            {{ $footer }}
+            {!! $footer !!}
         </div>
     @endisset
 </div>

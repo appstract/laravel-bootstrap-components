@@ -48,8 +48,7 @@ Contributions are very welcome! If you want to add a component, please keep the 
 
 - Have a look at the existing components for examples
 - Customization of the component (like custom classes and options for the component)
-- We higly appreciate if you can add support for multiple Bootstrap versions, but it is not required
-- Provide some docs in the Wiki
+- Provide some docs in the [Wiki](https://github.com/appstract/laravel-bootstrap-components/wiki)
 
 [Thanks to all the contributors](https://github.com/appstract/laravel-bootstrap-components/graphs/contributors)
 

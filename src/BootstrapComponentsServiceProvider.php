@@ -12,15 +12,11 @@ class BootstrapComponentsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views/bs'.config('bootstrap-components.version'), 'bootstrap-components');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bootstrap');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/bootstrap-components.php' => config_path('bootstrap-components.php'),
-            ], 'config');
-
-            $this->publishes([
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor/bootstrap-components'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/bootstrap'),
             ], 'views');
         }
     }
@@ -30,8 +26,6 @@ class BootstrapComponentsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/bootstrap-components.php', 'bootstrap-components');
-
         $this->app->register(BladeDirectivesServiceProvider::class);
     }
 }

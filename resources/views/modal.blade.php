@@ -1,4 +1,7 @@
-<div class="modal {{ $animation or 'fade' }} {{ $class or '' }}" id="{{ $id or 'modal' }}">
+<div
+    class="modal {{ $animation or 'fade' }} {{ $class or '' }}"
+    id="{{ $id or 'modal' }}"
+>
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             @isset($title)

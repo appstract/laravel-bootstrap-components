@@ -7,11 +7,6 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class BootstrapComponentsClass
 {
-    public function __construct()
-    {
-        // constructor body
-    }
-
     /*
      * Render pagination buttons
      *

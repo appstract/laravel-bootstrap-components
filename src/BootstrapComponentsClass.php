@@ -23,6 +23,6 @@ class BootstrapComponentsClass
         $paginator = (new LengthAwarePaginator($items, $items->count(), (int) $perPage, (int) $page))
             ->withPath($path);
 
-        return $paginator->render('bootstrap-components::render.pagination', $componentOptions);
+        return $paginator->render('bootstrap::render.pagination', $componentOptions);
     }
 }

@@ -5,11 +5,9 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/appstract/laravel-bootstrap-components/master.svg?style=flat-square)](https://travis-ci.org/appstract/laravel-bootstrap-components)
 
-Easily use bootstrap components as Laravel components.
-Requires Laravel 5.4+
+Easily use bootstrap components as Laravel components. Requires Laravel 5.4+
 
-At this moment Bootstrap 3 and 4 are supported, however the available components can vary.
-The package is in constant development and new components will be added regulary. You can help with adding components by creating a pull request.
+At this moment only Bootstrap 4 is supported. The package is in constant development and new components will be added regulary. You can help with adding components by creating a pull request.
 
 ## Installation
 
@@ -36,7 +34,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 ## Usage
 
 ```blade
-@component('bootstrap-components::modal')
+@component('bootstrap::modal')
     This is the content of the modal
 @endcomponent
 ```

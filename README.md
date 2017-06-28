@@ -32,14 +32,18 @@ Then add the ServiceProvider to your `config/app.php` file:
 
 ## Usage
 
+Examples:
 ```blade
 @component('bootstrap::modal')
     This is the content of the modal
 @endcomponent
+
+@component('bootstrap::progress', ['value' => 75]) 
+    // Extra bars
+@endcomponent
 ```
 
-Check the [wiki](https://github.com/appstract/laravel-bootstrap-components/wiki) for more documentation.
-
+More components and documentation [in the wiki](https://github.com/appstract/laravel-bootstrap-components/wiki).
 
 ## Contributing
 

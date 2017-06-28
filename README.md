@@ -6,7 +6,7 @@
 
 Easily use bootstrap components as Laravel components. Requires Laravel 5.4+
 
-At this moment only Bootstrap 4 is supported. The package is in constant development and new components will be added regulary. You can help with adding components by creating a pull request.
+At this moment only Bootstrap 4 is supported. The package is in constant development, meaning new components may be added in the future. You can help with adding components by creating a pull request.
 
 ## Installation
 

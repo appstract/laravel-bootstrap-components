@@ -19,6 +19,12 @@
             "email": "hello@appstract.team",
             "homepage": "https://appstract.team",
             "role": "Developer"
+        },
+        {
+            "name": "Bob Krijnen",
+            "email": "hello@appstract.team",
+            "homepage": "https://appstract.team",
+            "role": "Developer"
         }
     ],
     "require": {

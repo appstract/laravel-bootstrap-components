@@ -25,6 +25,12 @@
             "email": "hello@appstract.team",
             "homepage": "https://appstract.team",
             "role": "Developer"
+        },
+        {
+            "name": "Teun de Kleijne",
+            "email": "hello@appstract.team",
+            "homepage": "https://appstract.team",
+            "role": "Developer"
         }
     ],
     "require": {

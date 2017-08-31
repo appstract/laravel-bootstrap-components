@@ -1,6 +1,6 @@
 <div
     class="
-        alert alert-{{ $severity }}
+        alert alert-{{ $type }}
         {{ $class or '' }}
         @istrue($dismissible, 'alert-dismissible')
         @istrue($animate, 'fade show')

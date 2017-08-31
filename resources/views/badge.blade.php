@@ -1,7 +1,7 @@
 <span
     class="
         badge
-        badge-{{ $severity }}
+        badge-{{ $type }}
         {{ $class or '' }}
         @istrue($pill, 'badge-pill')
     "

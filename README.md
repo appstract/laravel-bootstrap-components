@@ -4,9 +4,13 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/appstract/laravel-bootstrap-components.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-bootstrap-components)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
-Easily use bootstrap components as Laravel components. Requires Laravel 5.4+
+Easily use Bootstrap 4 components as Laravel components. 
 
-At this moment only Bootstrap 4 is supported. The package is in constant development, meaning new components may be added in the future. You can help with adding components by creating a pull request.
+
+Requires Laravel 5.4+.
+The package is based on Bootstrap 4 beta.
+
+You can help with adding components by creating a pull request.
 
 ## Installation
 

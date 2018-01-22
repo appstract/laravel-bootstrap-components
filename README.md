@@ -35,9 +35,9 @@ More components and documentation [in the wiki](https://github.com/appstract/lar
 
 Contributions are very welcome! If you want to add a component, please keep the following in mind when creating a pull request:
 
-- Have a look at the existing components for examples
-- Customization of the component (like custom classes and options for the component)
-- Provide some docs in the [Wiki](https://github.com/appstract/laravel-bootstrap-components/wiki)
+- Have a look at the existing components for examples.
+- Customization of the component (like custom classes and options for the component).
+- Provide some docs in the [wiki](https://github.com/appstract/laravel-bootstrap-components/wiki).
 
 [Thanks to all the contributors](https://github.com/appstract/laravel-bootstrap-components/graphs/contributors)
 

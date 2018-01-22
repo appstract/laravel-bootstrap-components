@@ -6,10 +6,6 @@
 
 Easily use Bootstrap 4 components as Laravel components. 
 
-
-Requires Laravel 5.4+.
-The package is based on Bootstrap 4 beta.
-
 You can help with adding components by creating a pull request.
 
 ## Installation
@@ -18,20 +14,6 @@ You can install the package via composer:
 
 ```bash
 composer require appstract/laravel-bootstrap-components
-```
-
-### Provider
-
-Then add the ServiceProvider to your `config/app.php` file:
-
-```php
-'providers' => [
-    ...
-
-    Appstract\BootstrapComponents\BootstrapComponentsServiceProvider::class
-
-    ....
-]
 ```
 
 ## Usage

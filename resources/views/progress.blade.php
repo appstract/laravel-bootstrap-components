@@ -1,11 +1,15 @@
+<?php
+$min = $min ?? 0;
+$max = $max ?? 100;
+?>
 <div class="progress">
     <div
         class="progress-bar {{ $class or '' }}"
         role="progressbar"
-        style="width: {{ $value }}%"
+        style="width: {{ (($value - $min) * 100) / ($max - $min) }}%"
         aria-valuenow="{{ $value }}"
-        aria-valuemin="{{ $min or 0 }}"
-        aria-valuemax="{{ $max or 100 }}"
+        aria-valuemin="{{ $min }}"
+        aria-valuemax="{{ $max  }}"
     ></div>
 
     {{ $slot }}

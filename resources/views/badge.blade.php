@@ -2,7 +2,7 @@
     class="
         badge
         badge-{{ $type }}
-        {{ $class or '' }}
+        {{ $class ?? '' }}
         @istrue($pill, 'badge-pill')
     "
 >

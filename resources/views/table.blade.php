@@ -1,3 +1,3 @@
-<table class="table table-responsive {{ $class or '' }}">
+<table class="table table-responsive {{ $class ?? '' }}">
     {{ $slot }}
 </table>

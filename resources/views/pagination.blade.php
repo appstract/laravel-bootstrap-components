@@ -1,5 +1,5 @@
 <nav aria-label="Page navigation">
-    <ul class="pagination {{ $class or '' }}">
+    <ul class="pagination {{ $class ?? '' }}">
         {{ $slot }}
     </ul>
 </nav>

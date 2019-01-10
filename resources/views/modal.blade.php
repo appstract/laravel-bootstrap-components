@@ -1,6 +1,6 @@
 <div
-    class="modal {{ $animation or 'fade' }} {{ $class or '' }}"
-    id="{{ $id or 'modal' }}"
+    class="modal {{ $animation ?? 'fade' }} {{ $class ?? '' }}"
+    id="{{ $id ?? 'modal' }}"
 >
     <div class="modal-dialog" role="document">
         <div class="modal-content">

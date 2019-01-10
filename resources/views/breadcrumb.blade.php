@@ -1,3 +1,3 @@
-<nav class="breadcrumb {{ $class or '' }}">
+<nav class="breadcrumb {{ $class ?? '' }}">
     {{ $slot }}
 </nav>

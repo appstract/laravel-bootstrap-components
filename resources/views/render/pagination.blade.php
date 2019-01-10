@@ -1,9 +1,9 @@
 <nav aria-label="Page navigation">
     @php
-        $paginator = $paginator->toArray();
+        $paginat?? = $paginator->toArray();
     @endphp
 
-    <ul class="pagination {{ $class or '' }}">
+    <ul class="pagination {{ $class ?? '' }}">
         @istrue($arrows)
             <li class="page-item">
                 <a class="page-link" href="{{ $paginator['prev_page_url'] }}" aria-label="Previous">

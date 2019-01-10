@@ -1,11 +1,11 @@
 <div class="progress">
     <div
-        class="progress-bar {{ $class or '' }}"
+        class="progress-bar {{ $class ?? '' }}"
         role="progressbar"
         style="width: {{ $value }}%"
         aria-valuenow="{{ $value }}"
-        aria-valuemin="{{ $min or 0 }}"
-        aria-valuemax="{{ $max or 100 }}"
+        aria-valuemin="{{ $min ?? 0 }}"
+        aria-valuemax="{{ $max ?? 100 }}"
     ></div>
 
     {{ $slot }}

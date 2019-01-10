@@ -1,4 +1,4 @@
-<figure class="figure {{ $class or '' }}">
+<figure class="figure {{ $class ?? '' }}">
     {{ $slot }}
 
     @isset($caption)

@@ -1,5 +1,5 @@
 <div
-    class="card {{ $class or '' }}"
+    class="card {{ $class ?? '' }}"
 >
     @isset($header)
         <div class="card-header">

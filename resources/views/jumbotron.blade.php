@@ -1,7 +1,7 @@
 <div
     class="
         jumbotron
-        {{ $class or '' }}
+        {{ $class ?? '' }}
         @istrue($fullwidth, 'jumbotron-fluid')
     "
 >

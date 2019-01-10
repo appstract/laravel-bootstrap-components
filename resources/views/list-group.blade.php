@@ -1,4 +1,4 @@
-<ul class="list-group {{ $class or '' }}">
+<ul class="list-group {{ $class ?? '' }}">
     @isset($items)
         @foreach($items as $item)
             <li class="list-group-item">{{ $item }}</li>

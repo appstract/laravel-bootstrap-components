@@ -1,3 +1,3 @@
-<div class="input-group {{ $class or '' }}">
+<div class="input-group {{ $class ?? '' }}">
 	{{ $slot }}
 </div>

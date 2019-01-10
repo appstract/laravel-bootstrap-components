@@ -1,13 +1,13 @@
 <div
-    id="{{ $id or 'carousel' }}"
-    class="carousel slide {{ $class or '' }}"
+    id="{{ $id ?? 'carousel' }}"
+    class="carousel slide {{ $class ?? '' }}"
     data-ride="carousel"
 >
     @istrue($indicators)
         <ol class="carousel-indicators">
             @isset($items)
                 @foreach($items as $item)
-                    <li data-target="#{{ $id or 'carousel' }}" data-slide-to="{{ $loop->index }}"></li>
+                    <li data-target="#{{ $id ?? 'carousel' }}" data-slide-to="{{ $loop->index }}"></li>
                 @endforeach
             @else
                 {!! $indicators !!}
@@ -26,12 +26,12 @@
     </div>
 
     @istrue($controls)
-        <a class="carousel-control-prev" href="#{{ $id or 'carousel' }}" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#{{ $id ?? 'carousel' }}" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
 
-        <a class="carousel-control-next" href="#{{ $id or 'carousel' }}" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#{{ $id ?? 'carousel' }}" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>

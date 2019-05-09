@@ -1,6 +1,6 @@
 <nav aria-label="Page navigation">
     @php
-        $paginat?? = $paginator->toArray();
+        $paginator = $paginator->toArray();
     @endphp
 
     <ul class="pagination {{ $class ?? '' }}">

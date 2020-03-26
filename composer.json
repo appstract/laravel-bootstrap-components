@@ -10,33 +10,33 @@
     "authors": [
         {
             "name": "Gijs Jorissen",
-            "email": "hello@appstract.team",
-            "homepage": "https://appstract.team",
+            "email": "mail@appstract.nl",
+            "homepage": "https://appstract.nl",
             "role": "Developer"
         },
         {
             "name": "Olav van Schie",
-            "email": "hello@appstract.team",
-            "homepage": "https://appstract.team",
+            "email": "mail@appstract.nl",
+            "homepage": "https://appstract.nl",
             "role": "Developer"
         },
         {
             "name": "Bob Krijnen",
-            "email": "hello@appstract.team",
-            "homepage": "https://appstract.team",
+            "email": "mail@appstract.nl",
+            "homepage": "https://appstract.nl",
             "role": "Developer"
         },
         {
             "name": "Teun de Kleijne",
-            "email": "hello@appstract.team",
-            "homepage": "https://appstract.team",
+            "email": "mail@appstract.nl",
+            "homepage": "https://appstract.nl",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=5.6",
         "laravel/framework": ">=5.4",
-        "appstract/laravel-blade-directives": "^0.4"
+        "appstract/laravel-blade-directives": "^1.8"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7"

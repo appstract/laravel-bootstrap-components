@@ -2,8 +2,8 @@
 
 namespace Appstract\BootstrapComponents;
 
-use Illuminate\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Collection;
 
 class BootstrapComponentsClass
 {

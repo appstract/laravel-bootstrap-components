@@ -2,8 +2,8 @@
 
 namespace Appstract\BootstrapComponents;
 
-use Illuminate\Support\ServiceProvider;
 use Appstract\BladeDirectives\BladeDirectivesServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class BootstrapComponentsServiceProvider extends ServiceProvider
 {
